@@ -1,0 +1,185 @@
+@media screen and (min-width: 992px) {
+  body {
+    font-size: 18px;
+  }
+
+  section {
+    padding-top: 108px;
+    padding-bottom: 66px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  body {
+    font-size: 14px;
+  }
+
+  section {
+    padding-top: 66px;
+    padding-bottom: 57px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 12px;
+  }
+
+  section {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+}
+
+body {
+  position: relative;
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  content: '';
+  -webkit-filter: blur(2px);
+  -moz-filter: blur(2px);
+  -o-filter: blur(2px);
+  -ms-filter: blur(2px);
+  filter: blur(2px);
+}
+
+.navbar {
+  color: #fff;
+  background-color: #17334c;
+  display: none;
+}
+
+.navbar-nav > li > a {
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+.navbar-brand {
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+}
+
+.navbar-toggler:focus {
+  outline: 0;
+}
+
+.intro-section {
+  position: relative;
+  height: 100vh;
+  text-align: center;
+}
+
+.intro-header {
+  position: absolute;
+  top: 25vh;
+  left: 0;
+  right: 0;
+  font-weight: 800;
+}
+
+.intro-name {
+  font-size: 6em;
+  letter-spacing: 0.06em;
+}
+
+.intro-phrase {
+  font-size: 2.5em;
+  letter-spacing: 0.025em;
+}
+
+.intro-continue {
+  position: absolute;
+  bottom: 5vh;
+  left: 0;
+  right: 0;
+}
+
+.icon-link, .icon-link:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+.icon-link:hover, .icon-link:active {
+  color: #27557f;
+}
+
+.text-link, .text-link:visited {
+  color: inherit;
+  text-decoration: underline dashed;
+}
+
+.thumbnail-dark {
+  background-color: #000;
+  border-color: #000;
+}
+
+.section-header {
+  text-align: center;
+  font-size: 3em;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.section-content {
+  font-size: 1.2em;
+  letter-spacing: 0.02em;
+  padding: 0em 3em 3em;
+}
+
+hr {
+  border-width: 2px;
+}
+
+.background-tint-50 {
+  background-color: rgba(0,0,0,0.5);
+  background-blend-mode: multiply;
+}
+
+.background-tint-75 {
+  background-color: rgba(0,0,0,0.75);
+  background-blend-mode: multiply;
+}
+
+.background-primary {
+  background-color: #27557f;
+}
+
+.background-secondary {
+  background-color: #7ba5cc;
+  color: #000;
+}
+
+.btn-primary {
+  background: #27557f;
+  border: none;
+}
+
+.btn-primary:hover {
+  background: #17334c;
+}
+
+.footer {
+  padding: 2.5em;
+  text-align: center;
+}
+
+.links > li {
+  padding: 1em;
+}
