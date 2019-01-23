@@ -1,11 +1,3 @@
-var imageUrls = [
-  "assets/images/ewha.jpg",
-  "assets/images/nara.jpg",
-  "assets/images/osaka.jpg",
-  "assets/images/kyoto.jpg",
-  "assets/images/fuji.jpg"
-]
-
 $(document).ready(function() {
   if ($(window).scrollTop() > screen.height) {
     $('.navbar').css('display', 'flex');
@@ -23,10 +15,10 @@ $(document).ready(function() {
     e.preventDefault();
     scrollToLink($(this).attr('href'))
   });
-
-  var imageUrl = imageUrls[Math.floor(Math.random() * imageUrls.length)];
-  var background = 'url("' + imageUrl + '") no-repeat center center/cover fixed';
-  $('.background-image').css('background', background);
+  $('.project').hover(function(e) {
+    $(this).children('.project-description').toggle();
+    $(this).children('.img-thumbnail').toggleClass('image-dim');
+  })
 });
 
 function scrollToLink(link) {
