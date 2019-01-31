@@ -49,12 +49,8 @@ body {
   width: 100%;
   height: 100%;
   z-index: -1;
+  background: url("images/background.jpg") no-repeat center center/cover fixed;
   content: '';
-  -webkit-filter: blur(2px);
-  -moz-filter: blur(2px);
-  -o-filter: blur(2px);
-  -ms-filter: blur(2px);
-  filter: blur(2px);
 }
 
 .navbar {
@@ -86,6 +82,10 @@ body {
   text-align: center;
 }
 
+.height-60 {
+  height: 60vh;
+}
+
 .intro-header {
   position: absolute;
   top: 25vh;
@@ -100,8 +100,8 @@ body {
 }
 
 .intro-phrase {
-  font-size: 2.5em;
-  letter-spacing: 0.025em;
+  font-size: 1.2em;
+  letter-spacing: 0.05em;
 }
 
 .intro-continue {
@@ -128,6 +128,12 @@ body {
 .thumbnail-dark {
   background-color: #000;
   border-color: #000;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .section-header {
@@ -182,4 +188,43 @@ hr {
 
 .links > li {
   padding: 1em;
+}
+
+.project-title {
+  text-align: center;
+  font-size: 2em;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  padding: 0.25em 2em 0.25em 2em;
+}
+
+.project {
+  position: relative;
+  margin: 2em;
+}
+
+.image-dim {
+  -webkit-filter: brightness(50%);
+  -moz-filter: brightness(50%);
+  filter: brightness(50%);
+}
+
+.project-description {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 1.2em;
+  letter-spacing: 0.02em;
+}
+
+.project-technologies {
+  padding: 0.5em 2em 0.5em 2em;
+}
+
+.code-link {
+  color: white;
+  font-size: 0.6em;
 }
