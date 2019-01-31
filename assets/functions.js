@@ -15,6 +15,7 @@ $(document).ready(function() {
     e.preventDefault();
     scrollToLink($(this).attr('href'))
   });
+
   $('.project').hover(function(e) {
     $(this).children('.project-description').toggle();
     $(this).children('.img-thumbnail').toggleClass('image-dim');
